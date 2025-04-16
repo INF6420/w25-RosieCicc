@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is just a fun experience for getting into web development.">
     <title>A Purrfect Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<title>A Purrfect Blog</title>
 <body>
     <div class="header"> 
-        <a href="index.html" class="site-name"><img height="110" src="images/logo.png" alt="Rosie Cicc Logo"></a>
+        <a href="index.html" class="site-name"><img src="images/logo.png" alt="Rosie Cicc Logo"></a>
          <h1> A Purrfect Blog </h1>   
     </div>
 
@@ -37,10 +39,11 @@
 
     <div class="rightcolumn">
         <div class="card">
-        <img src="images/selfie2.jpg" style= "height:300px" alt="Selfie of blog owner. Woman with short, brown hair sitting in a dark room. She's smiling and looks happy.">
-        <img src="images/jojo2.jpg" style= "height:300px" alt="Picture of Jojo, tortoiseshell cat. Here she is sitting in a box, looking at the camera.">
-        <img src="images/jojo3.jpg" style= "height:300px" alt="Picutre of Jojo, tortoiseshell cat. Here she is lying on her back in a comical position. She's lying in a white chair.">
-        <img src="images/jojo4.jpg" style= "height:300px" alt="Picture of Jojo, tortoiseshell cat. Here she is snuggled up, asleep in a whtie cat bed. She may be sleeping, but her ears show that she's alert.">
+            
+        <img class="aboutimage" src="images/selfie2.jpg" style= "height:250px"  alt="Selfie of blog owner. Woman with short, brown hair sitting in a dark room. She's smiling and looks happy.">
+        <img class="aboutimage" src="images/jojo2.jpg" style= "height:250px" alt="Picture of Jojo, tortoiseshell cat. Here she is sitting in a box, looking at the camera.">
+        <img class="aboutimage" src="images/jojo3.jpg" style= "height:250px" alt="Picutre of Jojo, tortoiseshell cat. Here she is lying on her back in a comical position. She's lying in a white chair.">
+        <img class="aboutimage" src="images/jojo4.jpg" style= "height:250px" alt="Picture of Jojo, tortoiseshell cat. Here she is snuggled up, asleep in a whtie cat bed. She may be sleeping, but her ears show that she's alert.">
       
        
     </div>
@@ -61,6 +64,10 @@
 
         a:hover {
             color:aliceblue
+        }
+
+        img.aboutimage {
+            object-fit: cover;
         }
 
     </style>
