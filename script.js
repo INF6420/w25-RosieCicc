@@ -1,3 +1,8 @@
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  } 
+
 // Add the novalidate attribute when the JS loads
 var forms = document.querySelectorAll('.validate');
 for (var i = 0; i < forms.length; i++) {

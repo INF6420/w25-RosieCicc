@@ -4,14 +4,21 @@
     margin: 0;
 }
 
+
+
 body {
     background-color: #FAF3DD; 
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
    padding: 20px;
-   
-
 }
+
+
+
+.dark-mode {
+  background-color: #0a0a0a; 
+}
+
 
 .header {
     padding: 20px;
@@ -20,6 +27,11 @@ body {
     background: #AED9E0;
     color: rgb(46, 42, 42);
     font-size: 40px;
+}
+
+.dark-mode .header { 
+background: #26283b;
+color: #eeecec
 }
 
 ul {
@@ -61,12 +73,16 @@ ul {
   font-size: 16px;
 }
 
+.dark-mode .card{
+  background-color: #423e59;
+  color: #eeecec
+}
+
 .aboutimage {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
-  max-width: auto;
+  max-width: 100%;
   height: auto;
 }
 
@@ -85,14 +101,46 @@ ul {
     color: #f8dccb;
 }
 
+.dark-mode .footer{
+  background: #26283b;
+  color: #eeecec
+}
+
 a{ color: rgb(226, 228, 217)}
 a {font-size: 24px}
+a:hover {
+  color:aliceblue
+}
+
+.dark-mode a{
+  color: #eeecec
+}
+
+.dark-mode a:hover {
+  color: #0a0a0a;
+}
 
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
 }
+
+.grid-container {
+  display: grid;
+  column-gap: normal;
+    align-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+  background-color: #FFA69E;
+  padding: 10px;
+}
+
+.dark-mode .grid-container{
+  background-color: #423e59;
+}
+
 
 .site-name {
     display: flex;
@@ -110,6 +158,11 @@ a {font-size: 24px}
     display: block;
     font-weight: bold;
     margin-bottom: 0.3em;
+    color: #0a0a0a;
+  }
+
+  .dark-mode label {
+    color: #eeecec
   }
 
 .form-input {
@@ -120,6 +173,10 @@ a {font-size: 24px}
     padding: 1em;
     margin-bottom: 1.5em;
     width: 100%;
+  }
+  
+  .dark-mode .form-input{
+    border: 5px solid #746d9e
   }
   
   .form-input:focus {
@@ -138,6 +195,10 @@ a {font-size: 24px}
     border: 0;
     padding: .5em;
     cursor: pointer;
+  }
+
+  .dark-mode [type="submit"] {
+    background: #BAB6CE;
   }
   
   [type="submit"]:hover,
@@ -159,14 +220,14 @@ textarea {
     margin: -1em 0 1.5em;
 }
  
-  @media screen and (min-width: 1065px) {
+  @media screen and (min-width: 1700px) {
     .form {
       width: 50%;
       margin: 3em auto;
     }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 1700px) {
     .header,
     .footer{
         clear: both;
@@ -176,6 +237,7 @@ textarea {
     padding: 0;
    
     }
+   
     
     
 }
